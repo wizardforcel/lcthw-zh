@@ -2,7 +2,7 @@
 
 来源：[Learn C The Hard Way](http://c.learncodethehardway.org/book/)
 
-> 译者：[飞龙](https://github.com/wizardforcel)
+译者：[飞龙](https://github.com/wizardforcel)
 
 ## 协议
 
