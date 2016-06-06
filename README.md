@@ -4,6 +4,12 @@
 
 译者：[飞龙](https://github.com/wizardforcel)
 
++ [在线阅读](https://www.gitbook.com/book/wizardforcel/lcthw/details)
++ [PDF格式](https://www.gitbook.com/download/pdf/book/wizardforcel/lcthw)
++ [EPUB格式](https://www.gitbook.com/download/epub/book/wizardforcel/lcthw)
++ [MOBI格式](https://www.gitbook.com/download/mobi/book/wizardforcel/lcthw)
++ [Github](https://github.com/wizardforcel/lcthw-zh)
+
 ## 赞助我
 
 ![](img/qr_alipay.png)
