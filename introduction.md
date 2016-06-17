@@ -6,7 +6,7 @@
 
 &zwj;
 
-> Whatever I have up till now accepted as most true and assured I have gotten either from the senses or through the senses. But from time to time I have found that the senses deceive, and it is prudent never to trust completely those who have deceived us even once.
+> 直到现在，凡是我当作最真实、最可靠而接受的东西，都是从感官或通过感官得来的。不过，我有时觉得这些感官是骗人的，并且为了小心谨慎起见，对于一经骗过我们的东西就决不完全加以信任。
 
 > 勒内·笛卡尔，《第一哲学沉思录》
 
