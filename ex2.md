@@ -14,7 +14,7 @@
 
 使用make的第一阶段就是用它已知的方式来构建程序。Make预置了一些知识，来从其它文件构建多种文件。上一个练习中，你已经使用像下面的命令来这样做了：
 
-```
+```sh
 $ make ex1
 # or this one too
 $ CFLAGS="-Wall" make ex1
@@ -34,7 +34,7 @@ $ CFLAGS="-Wall" make ex1
 
 实际上你可以深入探索使用make的上述方法，但是先让我们来看看`Makefile`，以便让你对make了解得更多一点。首先，创建文件并写入以下内容：
 
-```
+```Makefile
 CFLAGS=-Wall -g
 
 clean:
@@ -50,7 +50,7 @@ clean:
 
 确保它和你的`ex1.c`文件在相同的目录中，之后运行以下命令：
 
-```
+```sh
 $ make clean
 $ make ex1
 ```
@@ -59,7 +59,7 @@ $ make ex1
 
 如果代码能正常工作，你应该看到这些：
 
-```
+```sh
 $ make clean
 rm -f ex1
 $ make ex1
@@ -81,7 +81,7 @@ $
 
 上面那些已经足够让你起步了，但是让我们以一种特定的方式来破坏make文件，以便你可以看到发生了什么。找到`rm -f ex1`的那一行并去掉缩进（让它左移），之后你可以看到发生了什么。再次运行`make clean`，你就会得到下面的信息：
 
-```
+```sh
 $ make clean
 Makefile:4: *** missing separator.  Stop.
 ```

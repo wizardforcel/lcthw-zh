@@ -26,7 +26,7 @@
 
 下面是执行以上步骤的脚本，我想让你复制它：
 
-```
+```sh
 # 1) Download it (use wget if you don't have curl)
 curl -O http://valgrind.org/downloads/valgrind-3.6.1.tar.bz2
 
@@ -51,13 +51,13 @@ sudo make install
 
 按照这份脚本，但是如果 `Valgrind` 有新的版本请更新它。如果它不能正常执行，也请试着深入研究原因。
 
-## 使用 Valgrind 
+## 使用 Valgrind
 
 使用 `Valgrind` 十分简单，只要执行`valgrind theprogram`，它就会运行你的程序，随后打印出你的程序运行时出现的所有错误。在这个练习中，我们会崩溃在一个错误输出上，然后会修复它。
 
 首先，这里有一个`ex3.c`的故意出错的版本，叫做`ex4.c`。出于练习目的，将它再次输入到文件中：
 
-```
+```c
 #include <stdio.h>
 
 /* Warning: This program is wrong on purpose. */
@@ -83,7 +83,7 @@ int main()
 
 现在我们像通常一样构建它，但是不要直接运行，而是使用`Valgrind`来运行它（见源码："使用Valgrind构建并运行 ex4.c"）：
 
-```
+```sh
 $ make ex4
 cc -Wall -g    ex4.c   -o ex4
 ex4.c: In function 'main':
@@ -95,38 +95,38 @@ $ valgrind ./ex4
 ==3082== Copyright (C) 2002-2010, and GNU GPL'd, by Julian Seward et al.
 ==3082== Using Valgrind-3.6.0.SVN-Debian and LibVEX; rerun with -h for copyright info
 ==3082== Command: ./ex4
-==3082== 
+==3082==
 I am -16775432 years old.
 ==3082== Use of uninitialised value of size 8
 ==3082==    at 0x4E730EB: _itoa_word (_itoa.c:195)
 ==3082==    by 0x4E743D8: vfprintf (vfprintf.c:1613)
 ==3082==    by 0x4E7E6F9: printf (printf.c:35)
 ==3082==    by 0x40052B: main (ex4.c:11)
-==3082== 
+==3082==
 ==3082== Conditional jump or move depends on uninitialised value(s)
 ==3082==    at 0x4E730F5: _itoa_word (_itoa.c:195)
 ==3082==    by 0x4E743D8: vfprintf (vfprintf.c:1613)
 ==3082==    by 0x4E7E6F9: printf (printf.c:35)
 ==3082==    by 0x40052B: main (ex4.c:11)
-==3082== 
+==3082==
 ==3082== Conditional jump or move depends on uninitialised value(s)
 ==3082==    at 0x4E7633B: vfprintf (vfprintf.c:1613)
 ==3082==    by 0x4E7E6F9: printf (printf.c:35)
 ==3082==    by 0x40052B: main (ex4.c:11)
-==3082== 
+==3082==
 ==3082== Conditional jump or move depends on uninitialised value(s)
 ==3082==    at 0x4E744C6: vfprintf (vfprintf.c:1613)
 ==3082==    by 0x4E7E6F9: printf (printf.c:35)
 ==3082==    by 0x40052B: main (ex4.c:11)
-==3082== 
+==3082==
 I am 0 inches tall.
-==3082== 
+==3082==
 ==3082== HEAP SUMMARY:
 ==3082==     in use at exit: 0 bytes in 0 blocks
 ==3082==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
-==3082== 
+==3082==
 ==3082== All heap blocks were freed -- no leaks are possible
-==3082== 
+==3082==
 ==3082== For counts of detected and suppressed errors, rerun with: -v
 ==3082== Use --track-origins=yes to see where uninitialised values come from
 ==3082== ERROR SUMMARY: 4 errors from 4 contexts (suppressed: 4 from 4)
@@ -173,7 +173,7 @@ $
 
 这段信息读起来会相当多，下面是你的处理方法：
 
-+ 无论什么时候你运行C程序并且使它工作，都应该使用`Valgrind`重新运行它来检查。 
++ 无论什么时候你运行C程序并且使它工作，都应该使用`Valgrind`重新运行它来检查。
 + 对于得到的每个错误，找到“源码:行数”提示的位置，然后修复它。你可以上网搜索错误信息，来弄清楚它的意思。
 + 一旦你的程序在`Valgrind`下不出现任何错误信息，应该就好了。你可能学会了如何编写代码的一些技巧。
 

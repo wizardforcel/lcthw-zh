@@ -8,7 +8,7 @@
 
 这个练习向你展示了C只是简单地将字符串储存为字符数组，并且在结尾加上`'\0'`（空字符）。你可能在上个练习中得到了暗示，因为我们手动这样做了。下面我会通过将它与数字数组比较，用另一种方法更清楚地实现它。
 
-```
+```c
 #include <stdio.h>
 
 int main(int argc, char *argv[])
@@ -70,7 +70,7 @@ int main(int argc, char *argv[])
 
 当你运行这段代码的时候，你应该首先看到所打印的数组的内容初始化为0值，之后打印初始化后的内容：
 
-```
+```sh
 $ make ex9
 cc -Wall -g    ex9.c   -o ex9
 $ ./ex9
@@ -78,7 +78,7 @@ numbers: 0 0 0 0
 name each: a   
 name: a
 numbers: 1 2 3 4
-name each: Z e d 
+name each: Z e d
 name: Zed
 another: Zed
 another each: Z e d

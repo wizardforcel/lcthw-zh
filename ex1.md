@@ -6,7 +6,7 @@
 
 这是你用C写的第一个简单的程序：
 
-```
+```c
 int main(int argc, char *argv[])
 {
     puts("Hello world.");
@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 
 把它写进 `ex1.c` 并输入：
 
-```
+```sh
 $ make ex1
 cc     ex1.c   -o ex1
 ```
@@ -28,7 +28,7 @@ cc     ex1.c   -o ex1
 
 现在你可以运行程序并看到输出。
 
-```
+```c
 $ ./ex1
 Hello world.
 ```
@@ -41,7 +41,7 @@ Hello world.
 
 对于这个程序，打开所有编译警告重新构建它：
 
-```
+```sh
 $ rm ex1
 $ CFLAGS="-Wall" make ex1
 cc -Wall    ex1.c   -o ex1
@@ -54,7 +54,7 @@ $
 
 现在你会得到一个警告，说`puts`函数是隐式声明的。C语言的编译器很智能，它能够理解你想要什么。但是如果可以的话，你应该去除所有编译器警告。把下面一行添加到`ex1.c`文件的最上面，之后重新编译来去除它：
 
-```
+```c
 #include <stdio.h>
 ```
 

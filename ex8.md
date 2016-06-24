@@ -8,7 +8,7 @@
 
 在我真正解释其重要性之前，我先要介绍一些概念：`sizeof`和数组。下面是我们将要讨论的一段代码：
 
-```
+```c
 #include <stdio.h>
 
 int main(int argc, char *argv[])
@@ -65,7 +65,7 @@ int main(int argc, char *argv[])
 
 ## 你会看到什么
 
-```
+```sh
 $ make ex8
 cc -Wall -g    ex8.c   -o ex8
 $ ./ex8
