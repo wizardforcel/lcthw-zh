@@ -6,7 +6,7 @@
 
 你应该掌握了一个简单的C程序的结构，所以让我们执行下一步简单的操作，声明不同类型的变量。
 
-```
+```c
 include <stdio.h>
 
 int main(int argc, char *argv[])
@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 
 你的输出应该和我的类似，你可以看到C的格式化字符串相似于Python或其它语言，很长一段时间中都是这样。
 
-```
+```sh
 $ make ex6
 cc -Wall -g    ex6.c   -o ex6
 $ ./ex6
@@ -79,7 +79,7 @@ $
 
 你可以通过向`printf`传递错误的参数来轻易使这个程序崩溃。例如，如果你找到打印我的名字的那行，把`initial`放到`first_name`前面，你就制造了一个bug。执行上述修改编译器就会向你报错，之后运行的时候你可能会得到一个“段错误”，就像这样：
 
-```
+```sh
 $ make ex6
 cc -Wall -g    ex6.c   -o ex6
 ex6.c: In function 'main':

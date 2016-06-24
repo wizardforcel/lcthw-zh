@@ -6,7 +6,7 @@
 
 你可以通过声明`int`，`float`，`char`和`double`类型的变量，来对它们做更多的事情，让我们来熟悉它们吧。接下来我们会在各种数学表达式中使用它们，所以我会向你介绍C的基本算术操作。
 
-```
+```c
 int main(int argc, char *argv[])
 {
     int bugs = 100;
@@ -91,7 +91,7 @@ int main(int argc, char *argv[])
 
 通常，你应该看到如下输出：
 
-```
+```shell
 $ make ex7
 cc -Wall -g    ex7.c   -o ex7
 $ ./ex7
