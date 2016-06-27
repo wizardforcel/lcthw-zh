@@ -2,6 +2,8 @@
 
 来源：[Learn C The Hard Way](http://c.learncodethehardway.org/book/)
 
+作者：[Zed A. Shaw](https://twitter.com/lzsthw)
+
 译者：[飞龙](https://github.com/wizardforcel)
 
 + [在线阅读](https://www.gitbook.com/book/wizardforcel/lcthw/details)
