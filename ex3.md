@@ -40,7 +40,7 @@ int main()
 
 当你做完上面的整个步骤，你应该看到这些东西：
 
-```shell
+```sh
 $ make ex3
 cc -Wall -g    ex3.c   -o ex3
 $ ./ex3
@@ -69,7 +69,7 @@ $
 + 运行新的程序，它会崩溃，或者打印出奇怪的年龄。
 + 将`printf`恢复原样，并且去掉`age`的初值，将那一行改为`int age;`，之后重新构建并运行。
 
-```shell
+```sh
 # edit ex3.c to break printf
 $ make ex3
 cc -Wall -g    ex3.c   -o ex3

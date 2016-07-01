@@ -34,7 +34,7 @@ $ CFLAGS="-Wall" make ex1
 
 实际上你可以深入探索使用make的上述方法，但是先让我们来看看`Makefile`，以便让你对make了解得更多一点。首先，创建文件并写入以下内容：
 
-```Makefile
+```make
 CFLAGS=-Wall -g
 
 clean:

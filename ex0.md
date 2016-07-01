@@ -16,7 +16,7 @@
 
 在多数Linux系统上你都需要安装一些包。对于基于Debian的系统，例如Ubuntu你需要使用下列命令来安装一些东西：
 
-```
+```sh
 $ sudo apt-get install build-essential
 ```
 
@@ -24,7 +24,7 @@ $ sudo apt-get install build-essential
 
 下面是在基于RPM的Linux系统，例如Fedora中执行相同安装工作的方法：
 
-```
+```sh
 $ su -c "yum groupinstall development-tools"
 ```
 

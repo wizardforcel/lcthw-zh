@@ -91,7 +91,7 @@ int main(int argc, char *argv[])
 
 通常，你应该看到如下输出：
 
-```shell
+```sh
 $ make ex7
 cc -Wall -g    ex7.c   -o ex7
 $ ./ex7
