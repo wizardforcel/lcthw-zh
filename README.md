@@ -6,6 +6,10 @@
 
 译者：[飞龙](https://github.com/wizardforcel)
 
+自豪地采用[谷歌翻译](https://translate.google.cn/)
+
+> **一句 MMP 送给在座的各位程序正义垃圾。**
+
 + [在线阅读](https://www.gitbook.com/book/wizardforcel/lcthw/details)
 + [PDF格式](https://www.gitbook.com/download/pdf/book/wizardforcel/lcthw)
 + [EPUB格式](https://www.gitbook.com/download/epub/book/wizardforcel/lcthw)
